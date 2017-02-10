@@ -1,25 +1,219 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+/* Colours */
+
+.red {
+	color: #f4473a;
 }
 
-.menu:before {
-  content: "[";
+.red:hover {
+	color: #f4473ab3;
 }
 
-.menu:after {
-  content: "]";
+.gold {
+	color: rgb(218, 148, 79);
 }
 
-.menu > li {
-  display: inline;
+.gold:hover {
+	color: rgb(230, 201, 172);
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+.white {
+    color: #fff;
+}
+
+/* Borders */
+
+.border-red {
+    border: solid #ed564b;
+}
+
+.border-top-md {
+    border-top-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.border-bottom-md {
+    border-bottom-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+/* Backgrounds */
+
+.bg-black-light {
+    background: #3b3b3b;
+}
+
+.bg-black-dark {
+    background: #292929;
+}
+
+/* Lists */
+
+ul.no-bullet {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Padding */
+
+.full-width {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'willis';
+  src: url('/fonts/friz_quadrata_bold-webfont.eot?1436903749');
+  src: url('/fonts/friz_quadrata_bold-webfont.eot?&1436903749#iefix') format("embedded-opentype"), url('/fonts/friz_quadrata_bold-webfont.woff2?1436903749') format("woff2"), url('/fonts/friz_quadrata_bold-webfont.woff?1436903749') format("woff"), url('/fonts/friz_quadrata_bold-webfont.ttf?1436903749') format("truetype"), url('/fonts/friz_quadrata_bold-webfont.svg?1436903749#friz_quadratabold') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a.navbar-brand {
+	font-family: 'willis';
+}
+
+
+
+/* Quotes */
+
+.quote-card {
+    padding: 20px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    min-height: 120px;
+}
+.quote-card p {
+    font-size: 16px;
+    margin: 0;
+    max-width: 80%;
+}
+.quote-card cite {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 200;
+    opacity: 0.8;
+}
+.quote-card:before {
+    font-family: Georgia, serif;
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 5em;
+    color: rgba(238, 238, 238, 0.8);
+    font-weight: normal;
+}
+.quote-card:after {
+    font-family: Georgia, serif;
+    content: "”";
+    position: absolute;
+    bottom: -110px;
+    line-height: 100px;
+    right: -32px;
+    font-size: 25em;
+    color: rgba(238, 238, 238, 0.8);
+    font-weight: normal;
+}
+
+/* Social Media Icons */
+
+/* footer social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-circle a {
+    background-color: #D3D3D3;
+}
+
+.content-bottom-pad-md {
+    padding-bottom: 20px;
+}
+
+.content-top-pad-md {
+    padding-top: 20px;
 }

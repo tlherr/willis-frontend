@@ -11,75 +11,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="font-awesome.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#!/home">Home</a></li>
-    <li><a href="#!/events">Events</a></li>
-  </ul>
-
+<body class="container">
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <div class="row border-bottom-md border-red">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-2">
+            <img src="/images/logo.png" alt="Willis Presbyterian Church" longdesc="https://en.wikipedia.org/wiki/Burning_bush" class="left" />
         </div>
-        <!-- /.container -->
-    </nav>
 
-
-    <header class="business-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="tagline">Business Name or Tagline</h1>
-                </div>
-            </div>
+        <div class="col-md-10">
+          <a class="navbar-brand gold" href="#">Willis Presbyterian Church</a>
         </div>
-    </header>
+      </div>
+    
+    </div>
 
-
-  <div ng-view class="container"></div>
-
-
-<footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Willis Church {app:v<span app-version></span>}</p>
-                </div>
+    <div class="col-md-8">
+      <nav class="navbar" role="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li>
+                          <a class="red" href="#!/home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-clock-o" aria-hidden="true"></i>Events</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-calendar" aria-hidden="true"></i>Schedule</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-street-view" aria-hidden="true"></i> Venue</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-history" aria-hidden="true"></i> History</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-user-circle" aria-hidden="true"></i> Elders</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Prayers</a>
+                      </li>
+                      <li>
+                          <a class="red" href="#!/events"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
             </div>
-            <!-- /.row -->
-        </footer>
+            <!-- /.container -->
+        </nav>
+      </div>
+    </div>
+
+  <main ng-view></main>
+
+  <footer>
+      <div class="row">
+          <div class="col-md-12 bg-black-light border-red border-top-md">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h4 class="white">Links</h4>
+
+                      <ul class="no-bullet">
+                          <li>
+                              <a href="http://presbyterianrecord.ca/" target="_blank" class="link--external red">Presbyterian Record</a>
+                          </li>
+                          <li>
+                              <a href="http://www.presbyterianarchives.ca" target="_blank" class="link--external red">Archives and Records Office</a>
+                          </li>
+                          <li>
+                              <a href="http://www.wmspcc.ca/" target="_blank" class="link--external red">Women's Missionary Society</a>
+                          </li>
+                          <li>
+                              <a href="http://presbyterian.ca" target="_blank" class="link--external red">Presbyterian Church in Canada</a>
+                          </li>
+                          <li>
+                              <a href="http://www.sermons4kids.com/" target="_blank" class="link--external red">Sermons 4 Kids</a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="col-md-9 full-width">
+
+                      <blockquote class="quote-card">
+                          <p class="white">We the people of Willis will provide an open place of worship, where we can come together as a caring part of the family of god.</p>
+                          <p class="white">To grow spiritually in our Christian faith through prayer, praise, and reaching out to others in God's name,
+                              in both our local and global community.</p>
+
+                          <cite class="white">
+                              Mission Statement
+                          </cite>
+                      </blockquote>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-12 bg-black-dark">
+              <div class="row">
+                  <div class="col-md-6">
+                      <p class="white">Copyright &copy; 2017 Willis Presbyterian Church <span class="label label-default" app-version></span></p>
+                  </div>
+
+                  <div class="col-md-6 clearfix">
+                      <ul class="social-network social-circle pull-right">
+                          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /.row -->
+  </footer>
 
 
   <!-- In production use:
@@ -87,6 +153,9 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="app.js"></script>
   <script src="Home/Home.js"></script>
   <script src="Events/Events.js"></script>
