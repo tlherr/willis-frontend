@@ -12,7 +12,7 @@
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-				<div class="item" ng-repeat="carousel in carousels">
+				<div ng-class="{ 'active': $first == true }" class="item" ng-repeat="carousel in carousels">
 					<img ng-src="{{ carousel.field_carousel_image }}" alt="{{ carousel.title }}">
 					<div class="carousel-caption">
 						<p ng-bind-html="carousel.title"></p>
