@@ -14,4 +14,12 @@ angular.module('Willis.Events', ['ngRoute'])
        .then(function(res){
           $scope.current_events = res.data;
         });
+
+	$scope.loadPastEvents = function() {
+        $http.get('https://data.willischurch.ca/api/events/past')
+            .then(function(res){
+                $scope.past_events = res.data;
+            });
+    }
+
 }]);
