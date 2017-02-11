@@ -5,7 +5,7 @@
             <h1>Events</h1>
             <hr>
 
-            <ul class="nav nav-tabs content-bottom-pad-md " id="myTabs" role="tablist">
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
                 <li role="presentation" class="active">
                     <a data-target="#current_events" id="current-events-tab" role="tab" data-toggle="tab" aria-controls="current" aria-expanded="true">Current Events</a>
                 </li>
@@ -15,7 +15,7 @@
             </ul>
         </div>
 
-        <div class="tab-pane fade in active" role="tabpanel" id="current_events" aria-labelledby="current-events-tab">
+        <div class="tab-pane fade in active content-top-pad-md" role="tabpanel" id="current_events" aria-labelledby="current-events-tab">
             <section class="col-md-12" ng-repeat="event in current_events">
                 <div class="row">
                     <div class="col-md-2">
@@ -42,7 +42,7 @@
             </section>
         </div>
 
-        <div class="tab-pane fade" role="tabpanel" id="past_events" aria-labelledby="past-events-tab">
+        <div class="tab-pane fade in content-top-pad-md" role="tabpanel" id="past_events" aria-labelledby="past-events-tab">
             <section class="col-md-12" ng-repeat="event in past_events">
                 <div class="row">
                     <div class="col-md-2">
