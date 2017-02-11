@@ -10,8 +10,8 @@ angular.module('Willis.Events', ['ngRoute'])
 }])
 
 .controller('EventCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-	$http.get('https://data.willischurch.ca/api/events')
+	$http.get('https://data.willischurch.ca/api/events/current')
        .then(function(res){
-          $scope.events = res.data;                
+          $scope.current_events = res.data;
         });
 }]);

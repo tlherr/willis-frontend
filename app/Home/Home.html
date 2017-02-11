@@ -14,7 +14,7 @@
 				<div id="{{ 'carousel-'.concat($index.toString()) }}" ng-class="{ 'active': $first == true }" class="item" ng-repeat="carousel in carousels">
 					<img ng-src="{{ carousel.field_carousel_image }}" alt="{{ carousel.title }}">
 					<div class="carousel-caption">
-						<p ng-bind-html="carousel.title"></p>
+						<h3 ng-bind-html="carousel.title"></h3>
 					</div>
 				</div>
 			</div>

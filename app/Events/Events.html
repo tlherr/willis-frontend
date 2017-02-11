@@ -4,32 +4,80 @@
         <div class="col-md-12">
             <h1>Events</h1>
             <hr>
+
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#current_events" id="current-events-tab" role="tab" data-toggle="tab" aria-controls="current" aria-expanded="true">Current Events</a>
+                </li>
+                <li role="presentation">
+                    <a href="#past_events" role="tab" id="past-events-tab" data-toggle="tab" aria-controls="past">Past Events</a>
+                </li>
+            </ul>
         </div>
 
-        <section class="col-md-12" ng-repeat="event in events">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="panel panel-danger text-center date">
-                        <div class="panel-heading month">
-                            <span class="panel-title strong">
-                                {{ event.field_date | date:'MMMM' }}
-                            </span>
-                        </div>
-                        <div class="panel-body day text-danger">
-                            {{ event.field_date | date:'d' }}
+        <div class="tab-pane fade active" role="tabpanel" id="current_events" aria-labelledby="current-events-tab">
+            <section class="col-md-12" ng-repeat="event in current_events">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                                <span class="panel-title strong">
+                                    {{ event.field_date | date:'MMMM' }}
+                                </span>
+                            </div>
+                            <div class="panel-body day text-danger">
+                                {{ event.field_date | date:'d' }}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-10">
-                    <h2 ng-bind-html="event.name"></h2>
-                    <details ng-bind-html="event.body"></details>
+                    <div class="col-md-10">
+                        <h2 ng-bind-html="event.name"></h2>
+                        <details ng-bind-html="event.body"></details>
 
-                    <div ng-bind-html="event.field_date | date:'medium' "></div>
-                    <div ng-bind-html="event.field_end_date | date:'medium' "></div>
-                </div>
+                        <div ng-bind-html="event.field_date | date:'medium' "></div>
+                        <div ng-bind-html="event.field_end_date | date:'medium' "></div>
+                    </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-pane fade" role="tabpanel" id="past_events" aria-labelledby="past-events-tab">
+            <section class="col-md-12" ng-repeat="event in past_events">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                                <span class="panel-title strong">
+                                    {{ event.field_date | date:'MMMM' }}
+                                </span>
+                            </div>
+                            <div class="panel-body day text-danger">
+                                {{ event.field_date | date:'d' }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <h2 ng-bind-html="event.name"></h2>
+                        <details ng-bind-html="event.body"></details>
+                        <p>
+                            <a href="#!/events/photos/{{ event.nid }}" class="red">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i> View Event Photos
+                            </a>
+                        </p>
+                        <div ng-bind-html="event.field_date | date:'medium' "></div>
+                        <div ng-bind-html="event.field_end_date | date:'medium' "></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
     </div>
 
 </body>
