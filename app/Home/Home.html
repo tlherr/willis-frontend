@@ -1,3 +1,5 @@
+<body ng-controller="HomeCtrl">
+
 <div class="row">
 	<div class="col-md-12 full-width">
 
@@ -11,9 +13,9 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item" ng-repeat="carousel in carousels">
-					<img src="{{ carousel.field_carousel_image }}" alt="{{ carousel.title }}">
+					<img ng-src="{{ carousel.field_carousel_image }}" alt="{{ carousel.title }}">
 					<div class="carousel-caption">
-						{{ carousel.title }}
+						<p ng-bind-html="carousel.title"></p>
 					</div>
 				</div>
 			</div>
@@ -41,3 +43,5 @@
 		<p>Sunday Worship is held at <time>8:45 am</time> on Sundays with <a class="red" href="/#!/ministers">Rev. Corey Ball.</a> Refreshments and fellowship after service. Sunday school/Nursery also available</p>
 	</div>
 </div>
+
+</body>
