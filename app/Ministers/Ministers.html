@@ -1,0 +1,24 @@
+<body ng-controller="MinistersCtrl">
+    <div class="row content-top-pad-md content-bottom-pad-md">
+        <div class="col-md-12">
+            <h1>Ministers</h1>
+            <hr>
+        </div>
+
+        <section class="col-md-12 content-top-pad-md content-bottom-pad-md" ng-repeat="minister in ministers">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="{{ minister.field_portrait }}" class="img-rounded" />
+                </div>
+
+                <div class="col-md-10">
+                    <h3>{{ minister.name }}</h3>
+                    <small>{{ minister.field_term | date:'yyyy' }} - {{ minister.field_term_ended | date:'yyyy' }}<span ng-hide="minister.field_term_ended.length">Present</span></small>
+
+                    <blockquote ng-bind-html="minister.body"></blockquote>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>

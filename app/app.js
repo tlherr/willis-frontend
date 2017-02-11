@@ -10,6 +10,7 @@ angular.module('Willis', [
     'Willis.Venue',
     'Willis.History',
     'Willis.Elders',
+    'Willis.Ministers',
     'Willis.Contact',
     'Willis.version'
 ]).

@@ -128,7 +128,6 @@ a.navbar-brand {
 
 /* Social Media Icons */
 
-/* footer social icons */
 ul.social-network {
     list-style: none;
     display: inline;
@@ -210,10 +209,24 @@ a.socialIcon:hover, .socialHoverClass {
     background-color: #D3D3D3;
 }
 
+/* Padding */
+
 .content-bottom-pad-md {
     padding-bottom: 20px;
 }
 
 .content-top-pad-md {
     padding-top: 20px;
+}
+
+/* Image Styles */
+
+.img-rounded {
+    float: none;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
 }
