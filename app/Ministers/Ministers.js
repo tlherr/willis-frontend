@@ -10,7 +10,7 @@ angular.module('Willis.Ministers', ['ngRoute'])
 }])
 
 .controller('MinistersCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-    $http.get('http://data.willischurch.ca/api/ministers')
+    $http.get('https://data.willischurch.ca/api/ministers')
         .then(function(res){
             $scope.ministers = res.data;
             console.log(res.data);

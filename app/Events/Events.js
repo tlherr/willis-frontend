@@ -10,7 +10,7 @@ angular.module('Willis.Events', ['ngRoute'])
 }])
 
 .controller('EventCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-	$http.get('http://data.willischurch.ca/api/events')
+	$http.get('https://data.willischurch.ca/api/events')
        .then(function(res){
           $scope.events = res.data;                
         });

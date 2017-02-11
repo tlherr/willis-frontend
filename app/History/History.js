@@ -10,7 +10,7 @@ angular.module('Willis.History', ['ngRoute'])
 }])
 
 .controller('HistoryCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-    $http.get('http://data.willischurch.ca/api/history')
+    $http.get('https://data.willischurch.ca/api/history')
         .then(function(res){
             $scope.historical_events = res.data;
             console.log(res.data);

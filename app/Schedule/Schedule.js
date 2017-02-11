@@ -10,7 +10,7 @@ angular.module('Willis.Schedule', ['ngRoute'])
 }])
 
 .controller('ScheduleCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-    $http.get('http://data.willischurch.ca/api/schedule')
+    $http.get('https://data.willischurch.ca/api/schedule')
         .then(function(res){
             $scope.schedules = res.data;
             console.log(res.data);
