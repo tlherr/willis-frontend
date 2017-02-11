@@ -4,5 +4,41 @@
             <h1>History</h1>
             <hr>
         </div>
+
+        <div class="col-md-12">
+            <h2>The Burning Bush</h2>
+            <p>Presbyterianism has had a long and glorious history and continues as a vital force within Christendom in the world today.</p>
+            <p>The symbol of a Burning Bush and the motto "<em>nec tamen consumebatur</em>" are apt and significant. This symbol was first adopted by the Hugenots of France in 1583 while they were undergoing great presecution because of their support of the Reformation movement. Half a century later, when Scotland was the scene of hard days for those who followed the Reformed Faith, the Convanters printed this symbol on their publications and since then it has spread across the Presbyterian Churches of the world.</p>
+            <p>But this emblem, of the Hugenots who first brought Presbyterianism to Canada in 1598 and of our Scottish ancestors who 160 years later further strengthened and established the Church in this land, is not only a symbol of a glorious past but the herald of a challenging future. The Church of God burns and "is not consumed" but the fires must be kept burning. That is the task to which we are called which demands like devotion and self sacrifice.</p>
+            <h2>The History</h2>
+            <p>The history of Willis Presbyterian Church goes back many years before 1865, for the first settlers is now Oro Township as early as 1825 or 1826.</p>
+            <p>"Sturdy pioneers from the straths and glens of Scotland, the emerald slopes of Ireland and from the homesteads of old Puritan England, hewed out their little clearances in what was comparatively an unbroken forest. They planted their family altars and amid the shadows of the new world, faced the exigence of a new and strange manner of life. They laid well and truly the foundations of Presbyterianism throughout the district." Worship services were held here and there in pioneer homes during those first early years.</p>
+            <p>in 1836 an appeal was made through the Presbytery of York to the Glassgow Colonial Society on behalf of the Presbyterian settlers of Oro and surrounding townships, requesting that able and devoted missionaries be sent to establish christian worship services and ordinances in their midst. In response, Dr. Robert Burns, who later became minister of Knox Church, Toronto, visited among the settlers and conducted Divine worship.</p>
+            <p>In the spring of 1840, the Presbyterians of Oro township secured leave to hold Sabbath services and worship in the school house, which had been erected several years earlier on the corner of Lot 12, Concession 9, Oro. Old and young continued to assemble here, week by week, for five years, without the leadership of a minister, being led in prayer and worship by the men in turn. To their great encouragement and comfort they were visited at least once during this period by the Rev. Alexander Mackenzie of Goderich and the Rev. John McTavish of Woodville.</p>
+            <h2>Old Knox 1845</h2>
+            <p>Very early in the settlement of the township a generous tract of land comprising most of what is now Lot 9, Concession 9, was given to the Presbyterian settlers for a glebe, church site and cemetery.</p>
+            <p>While worshipping in the log school house, steps were taken to build for themselves a church home. The timber for the church was cut and swuared by holding "Bees" on the tract of land which had been given earlier. Early in June 1845 the building was completed. The erection was a labour of love and although in the main by inexperienced hands, it was a substantial building. The exterior was finished in "rough-cast" of excellent quality and workmanship.</p>
+            <p>The Hon. Isaac Buchanan had offered a gift of two hundred dollars to each of the first ten Presbyterian churches erected in the pioneer county districts of Central Ontario. This generous gift was claimed and readily received.</p>
+            <p>On the last Sunday in June, 1845, the new church, henceforth known as Knox, was formally opened for divine worship by the Rev. John McTavish of Woodville, taking the text for his sermon from 1 Corinthians 3:11. Mr. McTavish visited the parish at irregular intervals, administering the Sacrements and giving counsel and comfort. Students from the newly opened Knox College, Toronto, conducted some services as well.</p>
+            <p>The first regularly &nbsp;settled minister was the Rev. Mr. Stewart who ministered for five years and was succeded by the Rev. James Fergusun. Durring Mr. Furguson's pastorate a manse was built.</p>
+            <p>The majority of the members and adherents of Knox Church were Gaelic speaking, mostly from the Isle of Islay, Scotland. Services were conducted in both English and Gaelic. The Rev. John Gray of Orillia ministered for many years to the English speaking Presbyterians.</p>
+            <p>In 1865 the English speaking settlers separated from Knox, purposing to build a more conviently located church. Two locations were proposed: one on Anderson's farm where the Esson church now stands, the other at McCallum's Creek, north of the Bass Lake Road on the 10th concession. The majority favoured the present site of Esson Church. The settlers in the northern part of the parish, which extended into the township of Medonte, then planned to build a church closer to them than either Knox or the proposed new church on the Anderson property.</p>
+        </div>
+
+        <div class="col-md-12">
+            <ul class="timeline">
+                <li ng-repeat="event in historical_events">
+                    <div class="timeline-badge">{{ event.field_historical_date | date:'yyyy' }}</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title" ng-bind-html="event.title"></h4>
+                        </div>
+                        <div class="timeline-body" ng-bind-html="event.body"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
     </div>
 </body>
