@@ -6,6 +6,11 @@ angular.module('Willis', [
     'ngSanitize',
     'Willis.Home',
     'Willis.Events',
+    'Willis.Schedule',
+    'Willis.Venue',
+    'Willis.History',
+    'Willis.Elders',
+    'Willis.Contact',
     'Willis.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
