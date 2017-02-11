@@ -9,7 +9,7 @@ angular.module('Willis.Home', ['ngRoute'])
   });
 }])
 
-.controller('HomeCtrl', [function() {
+.controller('HomeCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
     $http.get('https://data.willischurch.ca/api/carousel')
         .then(function(res){
             $scope.carousels = res.data;
