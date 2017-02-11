@@ -376,3 +376,8 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 /* End Timeline Styles */
+
+/* Mobile Styles */
+.navbar-toggle .icon-bar {
+    background-color: grey;
+}
