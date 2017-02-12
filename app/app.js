@@ -11,6 +11,7 @@ angular.module('Willis', [
     'Willis.History',
     'Willis.Elders',
     'Willis.Ministers',
+    'Willis.Prayers',
     'Willis.Contact'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

@@ -1,0 +1,14 @@
+<body ng-controller="PrayersCtrl">
+    <div class="row content-top-pad-md content-bottom-pad-md">
+        <div class="col-md-12">
+            <h1>Prayers</h1>
+            <hr>
+        </div>
+
+        <div class="col-md-12" ng-repeat="prayer in prayers">
+            <h3 class="red">{{ prayer.title }}</h3>
+            <p ng-bind-html="prayer.body"></p>
+        </div>
+
+    </div>
+</body>

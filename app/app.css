@@ -377,6 +377,13 @@ a.socialIcon:hover, .socialHoverClass {
 
 /* End Timeline Styles */
 
+/* Menu */
+
+.nav>li>a {
+    padding: 10px 10px;
+}
+
+
 /* Mobile Styles */
 .navbar-toggle .icon-bar {
     background-color: grey;
