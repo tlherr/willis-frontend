@@ -11,8 +11,7 @@ angular.module('Willis', [
     'Willis.History',
     'Willis.Elders',
     'Willis.Ministers',
-    'Willis.Contact',
-    'Willis.version'
+    'Willis.Contact'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
