@@ -13,6 +13,5 @@ angular.module('Willis.Ministers', ['ngRoute'])
     $http.get('https://data.willischurch.ca/api/ministers')
         .then(function(res){
             $scope.ministers = res.data;
-            console.log(res.data);
         });
 }]);

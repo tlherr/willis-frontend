@@ -13,6 +13,5 @@ angular.module('Willis.Schedule', ['ngRoute'])
     $http.get('https://data.willischurch.ca/api/schedule')
         .then(function(res){
             $scope.schedules = res.data;
-            console.log(res.data);
         });
 }]);

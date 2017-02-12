@@ -13,6 +13,5 @@ angular.module('Willis.Home', ['ngRoute'])
     $http.get('https://data.willischurch.ca/api/carousel')
         .then(function(res){
             $scope.carousels = res.data;
-            console.log(res.data);
         });
 }]);

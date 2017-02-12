@@ -29,16 +29,12 @@ angular.module('Willis.Events', ['ngRoute'])
 
 }])
 .controller('EventPhotoCtrl', ['$scope', '$http', '$sce', '$routeParams', function($scope, $http, $sce, $routeParams) {
-    console.log("Running Photo Controller");
-    console.log($routeParams.nid);
-
     var nid = $routeParams.nid;
 
     if(nid.length!=0) {
         $http.get('https://data.willischurch.ca/api/events/photos/'.concat(nid.toString()))
             .then(function(res){
                 $scope.photos = res.data;
-                console.log(res.data);
             });
     }
 }]);

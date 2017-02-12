@@ -13,6 +13,5 @@ angular.module('Willis.History', ['ngRoute'])
     $http.get('https://data.willischurch.ca/api/history')
         .then(function(res){
             $scope.historical_events = res.data;
-            console.log(res.data);
         });
 }]);
